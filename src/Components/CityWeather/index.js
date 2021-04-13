@@ -34,7 +34,7 @@ function CityWeather({cityWeather, err }) {
               <td>3</td>
               <th>Temperature</th>
               <td>
-                {cityWeather.main.temp} F
+                {cityWeather.main.temp -273} <sup>o</sup>C
               </td>
             </tr>
             <tr>
