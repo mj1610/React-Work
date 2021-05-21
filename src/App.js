@@ -14,12 +14,10 @@ function App() {
     .then((res)=>res.json())
     .then((result)=>{
       if (result.cod == "404"){
-        console.log(result);
         setCityWeather(null);
         setErr(result.message); 
       } 
-      else {
-      console.log(result);   
+      else { 
       setCityWeather(result);
       setErr(null);  
       }
