@@ -9,7 +9,7 @@ function App() {
   const [err, setErr]= useState(null)
   
   const fetchCityWeather=()=>{
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=be1bb3a69cb5d423a49740b152cb7512`
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=be1bb3a69cb5d423a49740b152cb7512`
     )
     .then((res)=>res.json())
     .then((result)=>{
